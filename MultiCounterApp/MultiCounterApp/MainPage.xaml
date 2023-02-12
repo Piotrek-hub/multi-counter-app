@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MultiCounterApp.Controls"
+             x:Class="MultiCounterApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+                <ScrollView Margin="10">
+                    <StackLayout  x:Name="stackLayout"/>
+                </ScrollView>
+            <Entry x:Name="CounterIDInput"/>
+            <Button Text="Add New Counter"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnCreateCounter"/>
+            <Button Text="Clear All Counters"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnClearCounters"/>
+        </VerticalStackLayout>
+      
+    </ScrollView>
+
+</ContentPage>

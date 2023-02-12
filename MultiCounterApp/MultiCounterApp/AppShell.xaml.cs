@@ -1,0 +1,9 @@
+﻿namespace MultiCounterApp;
+
+public partial class AppShell : Shell
+{
+	public AppShell()
+	{
+		InitializeComponent();
+	}
+}
